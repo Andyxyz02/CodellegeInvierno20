@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      public class Tarea8 {
+
+      	public static void main (String [] args) {
+
+      		System.out.println ("BUSQUEDA DE LA MODA EN UN VECTOR DE N ELEMENTOS\n");
+      		System.out.println ("TECNICA DE DIVIDE Y VENCERAS\n");
+      		System.out.println ("================================================================\n");
+
+      		int N = 50;										//Define el tamnho del vector
+
+      		int [] elVector = new int [N]; 					//elVector es un arreglo de N elementos de tipo enteros
+
+      		cargarVector(elVector);							//Cargamos el vector con valores aleatorios
+      		imprimirVector(elVector);						//Imprimimos los valores del vector
+
+
+      		/*Llamamos al metodo hallarModa e imprimimos el valor devuelto*/
+      		System.out.println ("\n\nEL VALOR QUE MAS SE REPITE ES: " + hallarModa (elVector, 0 , elVector.length-1));
+    </script>
+  </body>
+</html>
