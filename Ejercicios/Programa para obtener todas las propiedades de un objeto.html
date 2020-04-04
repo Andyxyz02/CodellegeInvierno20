@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function getPropertyNames(obj) {
+          var proto = Object.getPrototypeOf(obj);
+          return (
+              (typeof proto === 'object' && proto !== null ? getPropertyNames(proto) : [])
+              .concat(Object.getOwnPropertyNames(obj))
+              .filter(function(item, pos, result) { return result.indexOf(item) === pos; })
+              .sort()
+          );
+      }
+    </script>
+  </body>
+</html>

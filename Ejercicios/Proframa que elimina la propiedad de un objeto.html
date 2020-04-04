@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var miObjeto = new Object();
+
+      miObjeto["Nombre"]    = "Andres";
+      miObjeto["Apellidos"] = "Torres Hernandez";
+      miObjeto["Matricula"] = "3670";
+
+      delete miObjeto.Apellidos;
+      delete miObjeto['Apellidos'];
+      var prop = "Apellidos";
+      delete miObjeto[prop];
+
+      console.log(miObjeto)
+    </script>
+  </body>
+</html>
